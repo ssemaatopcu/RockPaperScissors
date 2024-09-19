@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var computerChoice: Sign = .rock
+    
     @IBOutlet var appSign: UILabel!
     @IBOutlet var gameStatus: UILabel!
     @IBOutlet var rockSign: UIButton!
@@ -20,10 +22,13 @@ class ViewController: UIViewController {
         updateUI(for: .start)
     }
     @IBAction func playerRock(_ sender: Any) {
+        playGame(playerChoice: .rock)
     }
     @IBAction func playerPaper(_ sender: Any) {
+        playGame(playerChoice: .paper)
     }
     @IBAction func playerScissors(_ sender: Any) {
+        playGame(playerChoice: .scissors)
     }
     
     func updateUI(for state: GameState) {
@@ -32,15 +37,6 @@ class ViewController: UIViewController {
         switch state {
         case .start:
             view.backgroundColor = UIColor.systemGray
-        case .win:
-            view.backgroundColor = UIColor.systemGreen
-        case .lose:
-            view.backgroundColor = UIColor.systemRed
-        case .draw:
-            view.backgroundColor = UIColor.systemYellow
-        }
-        
-        if state == .start {
             appSign.text = "🤖"
             againButton.isHidden = true
             
@@ -51,14 +47,27 @@ class ViewController: UIViewController {
             rockSign.isEnabled = true
             paperSign.isEnabled = true
             scissorsSign.isEnabled = true
+        case .win:
+            view.backgroundColor = UIColor.systemGreen
+        case .lose:
+            view.backgroundColor = UIColor.systemRed
+        case .draw:
+            view.backgroundColor = UIColor.systemYellow
         }
     }
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            updateUI(for: .start)
+        }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    func playGame(playerChoice: Sign) {
+        computerChoice = Sign.randomSign()
+        appSign.text = "\(computerChoice)"
+        let gameState = playerChoice.compare(opponent: computerChoice)
+        updateUI(for: gameState)
+        rockSign.isEnabled = false
+               paperSign.isEnabled = false
+               scissorsSign.isEnabled = false
+               againButton.isHidden = false
+           }
     }
-
-
-}
-

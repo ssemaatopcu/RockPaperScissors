@@ -52,7 +52,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-y6-5ky">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-y6-5ky">
                                 <rect key="frame" x="114" y="167" width="162" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
@@ -78,7 +78,6 @@
                         <outlet property="appSign" destination="CDo-y6-5ky" id="8aO-iQ-lve"/>
                         <outlet property="gameStatus" destination="2in-qG-sAN" id="fs7-7r-RQC"/>
                         <outlet property="paperSign" destination="PtR-4A-BhW" id="RN1-Gw-V5M"/>
-                        <outlet property="playerButtons" destination="I3R-Mt-fmD" id="z8F-oF-ydO"/>
                         <outlet property="rockSign" destination="Rri-Gc-sox" id="Ltg-jh-EI3"/>
                         <outlet property="scissorsSign" destination="I3R-Mt-fmD" id="FC2-sO-twx"/>
                     </connections>

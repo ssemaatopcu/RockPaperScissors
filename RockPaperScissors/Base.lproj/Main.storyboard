@@ -74,9 +74,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="againButton" destination="Ze5-4M-c6X" id="66A-17-1G8"/>
                         <outlet property="appSign" destination="CDo-y6-5ky" id="8aO-iQ-lve"/>
                         <outlet property="gameStatus" destination="2in-qG-sAN" id="fs7-7r-RQC"/>
                         <outlet property="paperSign" destination="PtR-4A-BhW" id="RN1-Gw-V5M"/>
+                        <outlet property="playerButtons" destination="I3R-Mt-fmD" id="z8F-oF-ydO"/>
                         <outlet property="rockSign" destination="Rri-Gc-sox" id="Ltg-jh-EI3"/>
                         <outlet property="scissorsSign" destination="I3R-Mt-fmD" id="FC2-sO-twx"/>
                     </connections>

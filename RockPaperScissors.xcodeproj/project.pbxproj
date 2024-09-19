@@ -13,6 +13,8 @@
 		48DB3FC62C9C706500DD4D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DB3FC42C9C706500DD4D74 /* Main.storyboard */; };
 		48DB3FC82C9C706700DD4D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DB3FC72C9C706700DD4D74 /* Assets.xcassets */; };
 		48DB3FCB2C9C706700DD4D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DB3FC92C9C706700DD4D74 /* LaunchScreen.storyboard */; };
+		48DB3FD32C9C70F000DD4D74 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB3FD22C9C70F000DD4D74 /* Sign.swift */; };
+		48DB3FD52C9C715200DD4D74 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB3FD42C9C715200DD4D74 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		48DB3FC72C9C706700DD4D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48DB3FCA2C9C706700DD4D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48DB3FCC2C9C706700DD4D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48DB3FD22C9C70F000DD4D74 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		48DB3FD42C9C715200DD4D74 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				48DB3FBE2C9C706500DD4D74 /* AppDelegate.swift */,
 				48DB3FC02C9C706500DD4D74 /* SceneDelegate.swift */,
 				48DB3FC22C9C706500DD4D74 /* ViewController.swift */,
+				48DB3FD22C9C70F000DD4D74 /* Sign.swift */,
+				48DB3FD42C9C715200DD4D74 /* GameState.swift */,
 				48DB3FC42C9C706500DD4D74 /* Main.storyboard */,
 				48DB3FC72C9C706700DD4D74 /* Assets.xcassets */,
 				48DB3FC92C9C706700DD4D74 /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			files = (
 				48DB3FC32C9C706500DD4D74 /* ViewController.swift in Sources */,
 				48DB3FBF2C9C706500DD4D74 /* AppDelegate.swift in Sources */,
+				48DB3FD52C9C715200DD4D74 /* GameState.swift in Sources */,
+				48DB3FD32C9C70F000DD4D74 /* Sign.swift in Sources */,
 				48DB3FC12C9C706500DD4D74 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
